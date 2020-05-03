@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Locales
+
+If you need to change the locales/messages, look for them inside the `public/locales/your-language` and change away.
+
+Also if you add more, check out `src/components/translationChanger.js` and make the necessary changes.
+
+I added that component as a means to manually change the translation. To give options to whoever might consider taking this repo out for a spin.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,32 +46,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Storybook commands
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- If you want to run this locally issue `yarn storybook` to get the app running in development mode (as a aside i tend to use the `--ci` flag to prevent Storybook from opening a browser window. If you don't want this, remove the flag)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- If you want to test the production version of your Storybook, issue `yarn build-storybook`, wait for the build to complete and then issue `serve_storybook` and open a browser window to `http://localhost:5000`
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
